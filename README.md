@@ -62,6 +62,6 @@ For GPU acceleration, please follow the official PyTorch installation instructio
 
 ## License
 
-This repository is distributed under the MIT License.  
-See the `LICENSE` file in the root of this project for the full license text.
+This repository is distributed under the GNU General Public License v3.0 (GPL-3.0).  
+See the `LICENSE` file in the root of this project for the full license text and terms of use, modification, and redistribution.
 
