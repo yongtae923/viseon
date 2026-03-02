@@ -1,0 +1,28 @@
+name: viseon
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  # Core scientific stack
+  - numpy
+  - pandas
+  - matplotlib
+  - pillow
+  - pyyaml
+  - tqdm
+  # PyTorch and ecosystem (CPU/GPU builds will be chosen by conda)
+  - pytorch
+  - torchvision
+  - torchaudio
+  # Logging / visualization
+  - tensorboard
+  # Optional: Jupyter support
+  - jupyter
+  - ipykernel
+  - pip:
+      # Biologically plausible phosphene simulator used in this project
+      - dynaphos
+

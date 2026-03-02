@@ -10,7 +10,6 @@ import torchvision.transforms.functional as F
 import torchvision.datasets as ds
 import PIL
 from PIL import Image, ImageFont, ImageDraw, ImageFilter 
-import cv2 as cv
 import string
 import utils
 from tqdm import tqdm
@@ -67,7 +66,7 @@ def create_circular_mask(h, w, center=None, radius=None, circular_mask=True):
         radius = min(center[0], center[1], w-center[0], h-center[1])
 
     x = torch.arange(h)
-    Y, X = torch.meshgrid(x,x)
+    Y, X = torch.meshgrid(x, x, indexing='ij')
     dist_from_center = torch.sqrt((X - center[0])**2 + (Y-center[1])**2)
 
     mask = dist_from_center <= radius

@@ -37,7 +37,7 @@ training_pipeline:
 
 dataset:
     dataset: BouncingMNIST
-    data_directory : ../../_Datasets/BouncingMnist/
+    data_directory : ./data/
     load_preprocessed: True # for the ADE50k dataset:
     sequence_length: 5 # for the BouncingMNIST dataset:
     mode: recon # for the BouncingMNIST dataset:

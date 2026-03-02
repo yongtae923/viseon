@@ -45,4 +45,21 @@ van der Grinten, M., de Ruyter van Steveninck, J., Lozano, A., Pijnacker, L., RÃ
     - Monitor training using tensorboard:
     
           tensorboard --logdir [your output path]\tensorboard
-          
+
+## Conda environment
+
+You can create a Conda environment that contains all required dependencies by using the provided `environment.yml`:
+
+```bash
+conda env create -f environment.yml
+conda activate viseon
+```
+
+The file installs PyTorch, torchvision, tensorboard and other scientific Python packages via Conda, and installs the `dynaphos` phosphene simulator via `pip` inside the environment.  
+For GPU acceleration, please follow the official PyTorch installation instructions if you need a specific CUDA version.
+
+## License
+
+This repository is distributed under the MIT License.  
+See the `LICENSE` file in the root of this project for the full license text.
+
