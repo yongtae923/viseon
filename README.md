@@ -1,6 +1,8 @@
 # End-to-end optimization of prosthetic vision
 ## Branch for the end-to-end experiments with biologically plausible phosphene simulation
 
+> This repository contains a modified version of the original codebase, maintained by **Yongtae Kim** (`viseon@yongtae.kim`).
+
 ### Trained  model parameters can be found here:
 https://surfdrive.surf.nl/files/index.php/s/vMG4UuJHo0njlWH 
 
